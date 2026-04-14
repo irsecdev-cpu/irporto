@@ -1,56 +1,55 @@
-baseURL = 'https://github.com/irsecdev-cpu/irporto'
+baseURL = 'https://irsecdev-cpu.github.io/irporto/'
 languageCode = 'en-us'
-title = 'Dev AI Portfolio | Project Overview'
+title = 'Portfolio | Project Overview'
 theme = "congo"
 
 [params]
-colorScheme = "emerald"
-mainSections = ["projects"]
+  colorScheme = "ocean"
+  appearance = "auto"
+  mainSections = ["projects"]
 
-[[menu.main]]
-  name = "Projects"
-  pageRef = "/projects" # Adaugă slash în față
+[params.homepage]
+  layout = "profile"
+  showRecent = true
+  recentLimit = 3
+  showMoreLink = true
+
+[params.profileMode]
+  enabled = true
+  title = "Hi! I'm IR"
+  subtitle = "IT Portfolio | Dev & Analysis & Architecture"
+  imageUrl = "img/avatar.png"
+  imageSize = "150px"
+
+[[params.profileMode.buttons]]
+  name = "View Projects"
+  url = "projects/"
   weight = 10
 
 [[params.profileMode.buttons]]
+  name = "CV / Resume"
+  url = "cv.pdf"
+  weight = 20
+
+[[menu.main]]
   name = "Projects"
-  url = "/projects/" # Adaugă slash în față
-
-[params.homepage]
-  layout = "profile" # sau "hero"
-  showRecent = true
-  recentLimit = 5
-
-[params.profileMode]
-enabled = true
-title = "Hi! I'm IR"
-subtitle = "IT Portfolio | Analysis & Architecture"
-imageUrl = "img/avatar.png"
-
-[[params.profileMode.buttons]]
-name = "Projects"
-url = "projects/"
-
-[[params.profileMode.buttons]]
-name = "CV / Resume"
-url = "cv.pdf"
+  pageRef = "projects"
+  weight = 10
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/irsecdev-cpu"
+  name = "github"
+  url = "https://github.com/irsecdev-cpu"
 
 [[params.socialIcons]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/"
+  name = "linkedin"
+  url = "https://linkedin.com/in/ramona-iovan"
 
 [[params.socialIcons]]
-name = "email"
-url = "mailto:irsecdev@email.com"
+  name = "email"
+  url = "mailto:irsecdev@email.com"
 
-[markup]
-[markup.goldmark]
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
 [author]
   name = "IR"

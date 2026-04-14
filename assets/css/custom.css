@@ -1,0 +1,46 @@
+/* --- FUNDAL ȘI CULORI --- */
+.dark {
+    /* Fundal aproape negru pentru ecrane OLED */
+    --color-neutral-900: #05080a; 
+    /* Albastru electric pentru accente */
+    --color-primary-500: #0ea5e9; 
+}
+
+/* --- HEADER MODERN --- */
+.fixed-header {
+    /* Efect de sticlă mată (Glassmorphism) */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(5, 8, 10, 0.75) !important;
+}
+
+/* --- ELEMENTE UI --- */
+.rounded-xl, .img, .avatar {
+    /* Rotunjire modernă pentru imagini și avatar */
+    border-radius: 1.25rem !important;
+}
+
+/* --- ANIMAȚII CARDURI --- */
+/* Efect de ridicare pentru proiecte la hover */
+.prose .card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prose .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-primary-500);
+}
+
+/* --- OPTIMIZARE MOBIL --- */
+@media (max-width: 768px) {
+    .prose {
+        font-size: 1.05rem; /* Lizibilitate sporită */
+    }
+    
+    /* Butoane mai mari pentru degete (Touch Target) */
+    .appearance-none {
+        padding: 12px 20px !important;
+        margin-bottom: 8px;
+    }
+}
