@@ -1,0 +1,56 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Dev AI Portfolio | Project Overview'
+theme = "congo"
+
+[params]
+colorScheme = "emerald"
+mainSections = ["projects"]
+
+[[menu.main]]
+  name = "Projects"
+  pageRef = "/projects" # Adaugă slash în față
+  weight = 10
+
+[[params.profileMode.buttons]]
+  name = "Projects"
+  url = "/projects/" # Adaugă slash în față
+
+[params.homepage]
+  layout = "profile" # sau "hero"
+  showRecent = true
+  recentLimit = 5
+
+[params.profileMode]
+enabled = true
+title = "Hi! I'm IR"
+subtitle = "IT Portfolio | Analysis & Architecture"
+imageUrl = "img/avatar.png"
+
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "projects/"
+
+[[params.profileMode.buttons]]
+name = "CV / Resume"
+url = "cv.pdf"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/irsecdev-cpu"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:irsecdev@email.com"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[author]
+  name = "IR"

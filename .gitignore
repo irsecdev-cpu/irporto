@@ -1,0 +1,15 @@
+# Fișiere generate de Hugo (nu le urca, GitHub Actions le va genera singur)
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Log-uri și fișiere temporare
+hugo_stats.json
+*.log
+
+# Fișiere specifice sistemului de operare
+.DS_Store
+Thumbs.db
+
+# Configurații locale sau sensibile (dacă folosești variabile de mediu)
+.env
