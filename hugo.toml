@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://github.com/irsecdev-cpu/irporto'
 languageCode = 'en-us'
 title = 'Dev AI Portfolio | Project Overview'
 theme = "congo"
